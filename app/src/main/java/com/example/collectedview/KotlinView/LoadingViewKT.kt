@@ -22,9 +22,9 @@ class LoadingViewKT :View {
     private var offset2: Float =0.0f
     private var offset3: Float =0.0f
     lateinit var dotPaint: Paint
-    lateinit var dotAnimator1: ValueAnimator
-    lateinit var dotAnimator2: ValueAnimator
-    lateinit var dotAnimator3: ValueAnimator
+      var dotAnimator1: ValueAnimator?
+      var dotAnimator2: ValueAnimator?
+      var dotAnimator3: ValueAnimator?
     private  var dotSpacing: Int = 1
 
     constructor(context: Context?) : this(context, null)
@@ -40,31 +40,31 @@ class LoadingViewKT :View {
         dotPaint.color = Color.parseColor("#FFD102")
 
         dotAnimator1 = ValueAnimator.ofFloat(0F,dotRadius)
-        dotAnimator1.duration = 600
-        dotAnimator1.repeatMode =ValueAnimator.REVERSE
-        dotAnimator1.repeatCount = ValueAnimator.INFINITE
+        dotAnimator1?.duration = 600
+        dotAnimator1?.repeatMode =ValueAnimator.REVERSE
+        dotAnimator1?.repeatCount = ValueAnimator.INFINITE
 
-        dotAnimator1.addUpdateListener {
+        dotAnimator1?.addUpdateListener {
             offset1 = it.getAnimatedValue() as Float
             invalidate()
         }
 
         dotAnimator2 = ValueAnimator.ofFloat(0F,dotRadius)
-        dotAnimator2.duration = 600
-        dotAnimator2.repeatMode =ValueAnimator.REVERSE
-        dotAnimator2.repeatCount = ValueAnimator.INFINITE
-        dotAnimator2.startDelay = 200
-        dotAnimator2.addUpdateListener {
+        dotAnimator2?.duration = 600
+        dotAnimator2?.repeatMode =ValueAnimator.REVERSE
+        dotAnimator2?.repeatCount = ValueAnimator.INFINITE
+        dotAnimator2?.startDelay = 200
+        dotAnimator2?.addUpdateListener {
             offset2 = it.getAnimatedValue() as Float
             invalidate()
         }
 
         dotAnimator3 = ValueAnimator.ofFloat(0F,dotRadius)
-        dotAnimator3.duration = 600
-        dotAnimator3.repeatMode =ValueAnimator.REVERSE
-        dotAnimator3.repeatCount = ValueAnimator.INFINITE
-        dotAnimator3.startDelay = 400
-        dotAnimator3.addUpdateListener {
+        dotAnimator3?.duration = 600
+        dotAnimator3?.repeatMode =ValueAnimator.REVERSE
+        dotAnimator3?.repeatCount = ValueAnimator.INFINITE
+        dotAnimator3?.startDelay = 400
+        dotAnimator3?.addUpdateListener {
             offset3 = it.getAnimatedValue() as Float
             invalidate()
         }
@@ -86,19 +86,26 @@ class LoadingViewKT :View {
     }
 
     fun startLoading(){
-        if(!dotAnimator1.isRunning){
-            dotAnimator1.start()
-            dotAnimator2.start()
-            dotAnimator3.start()
+        if(!dotAnimator1!!.isRunning){
+            dotAnimator1?.start()
+            dotAnimator2?.start()
+            dotAnimator3?.start()
         }
     }
 
     fun stopLoading() {
-        if (dotAnimator1.isRunning) {
-            dotAnimator1.cancel()
-            dotAnimator2.cancel()
-            dotAnimator3.cancel()
+        if (dotAnimator1!!.isRunning) {
+            dotAnimator1?.cancel()
+            dotAnimator2?.cancel()
+            dotAnimator3?.cancel()
+            clear()
         }
+    }
+
+    fun clear(){
+        dotAnimator1 = null
+        dotAnimator2 = null
+        dotAnimator3 = null
     }
 
 }
