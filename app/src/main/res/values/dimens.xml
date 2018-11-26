@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="loading_dialog_h">200dp</dimen>
+    <dimen name="loading_dialog_w">200dp</dimen>
+
+
+</resources>

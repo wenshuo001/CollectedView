@@ -3,7 +3,7 @@ package com.example.collectedview.Utils;
 import android.content.Context;
 
 /**
- * Created by liupeng on 2018/11/16.
+ * Created 2018/11/16.
  */
 
 public class ViewUtil {
@@ -14,5 +14,4 @@ public class ViewUtil {
         final float scale = context.getResources().getDisplayMetrics().density;
         return   (dpValue * scale + 0.5f);
     }
-
 }

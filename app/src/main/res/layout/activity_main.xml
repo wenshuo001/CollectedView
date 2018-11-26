@@ -7,8 +7,16 @@
     tools:context="com.example.collectedview.MainActivity">
 
 
-   <com.example.collectedview.KotlinView.LoadingViewKT
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:id="@+id/loading"/>
+   <Button
+       android:id="@+id/loading_dialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="8dp"
+       android:layout_marginStart="8dp"
+       android:layout_marginTop="8dp"
+       android:text="LoadingDialog"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
