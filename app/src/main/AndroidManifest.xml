@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.LoadingActivity"></activity>
+        <activity android:name=".UI.LoadingActivity" />
+        <activity android:name=".UI.LableActivity"></activity>
     </application>
 
 </manifest>
