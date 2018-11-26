@@ -29,6 +29,7 @@ class LoadingActivity : AppCompatActivity() {
                 }).build()
         loading_view=builder.initView(R.id.loading_dialog) as LoadingViewKT
         loading_view.startLoading()
+        loading_view.setBackgroundResource(R.drawable.shape_dialog_round)
         dialog.show()
     }
 
