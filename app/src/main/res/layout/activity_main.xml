@@ -36,4 +36,15 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent" />
 
+   <Button
+       android:id="@+id/ShepherdCheck"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginTop="8dp"
+       android:text="ShepherdCheckActivity"
+       android:textAllCaps="false"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/lableView_btn" />
+
 </android.support.constraint.ConstraintLayout>

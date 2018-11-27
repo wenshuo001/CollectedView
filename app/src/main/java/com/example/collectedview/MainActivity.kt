@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.collectedview.UI.LableActivity
 import com.example.collectedview.UI.LoadingActivity
+import com.example.collectedview.UI.ShepherdCheckActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,12 @@ class MainActivity : AppCompatActivity() {
          */
         lableView_btn.setOnClickListener {
             Intent(this@MainActivity,LableActivity::class.java).run {
+                startActivity(this)
+            }
+        }
+
+        ShepherdCheck.setOnClickListener {
+            Intent(this@MainActivity,ShepherdCheckActivity::class.java).run {
                 startActivity(this)
             }
         }

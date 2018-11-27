@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.example.collectedview.R;
 import com.example.collectedview.Utils.ViewUtil;
 
+import java.util.TimerTask;
+
 /**
  * popView
  * @author Krear 2018/08/10
@@ -41,6 +43,7 @@ public class LableView extends ViewGroup implements View.OnClickListener {
     public void setOnItemClickListener(OnItemClickListener itemListener)
     {
         this.itemListener = itemListener;
+
     }
 
     public LableView(Context context) {

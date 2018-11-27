@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".UI.LoadingActivity" />
-        <activity android:name=".UI.LableActivity"></activity>
+        <activity android:name=".UI.LableActivity" />
+        <activity android:name=".UI.ShepherdCheckActivity"></activity>
     </application>
 
 </manifest>
