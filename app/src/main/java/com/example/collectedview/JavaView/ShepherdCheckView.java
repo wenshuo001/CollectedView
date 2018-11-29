@@ -46,13 +46,11 @@ public class ShepherdCheckView extends View{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         float plaid_width= screenWidth/8;
-        float plaid_height= plaid_width;
+
         int left=0,top=0,right=0,bottom=0;
         for(int j=0;j<8;j++){
-
             //左上角不变  变右下角
-            bottom += plaid_height;
-
+            bottom += plaid_width;
             List<RectF> brect=new ArrayList<>();
             List<RectF> wrect=new ArrayList<>();
             for(int i=0;i<8/2;i++){
@@ -106,6 +104,8 @@ public class ShepherdCheckView extends View{
     }
     Timer timer = new Timer();
     public void invate(Canvas canvas){
+        RectF rect = black_rects.get(0).get(0);
+
 //        for(int i=0;i<black_rects.size();i++) {
 //            for (int j = 0; j < black_rects.get(i).size(); j++) {
 //                Rect rect = black_rects.get(i).get(j);

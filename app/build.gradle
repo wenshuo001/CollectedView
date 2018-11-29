@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -13,6 +14,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
     }
     buildTypes {
         release {
@@ -39,4 +46,8 @@ dependencies {
         force = true
     }
 
+    // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
+    provided("com.tinkerpatch.tinker:tinker-android-anno:1.9.9")
+    implementation("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.9")
 }
+apply from: 'tinkerpatch.gradle'

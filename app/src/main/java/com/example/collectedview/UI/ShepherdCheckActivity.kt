@@ -11,7 +11,7 @@ class ShepherdCheckActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shepherd_check)
-        start()
+        //start()
     }
 
     var timer:Timer?=null;
@@ -27,7 +27,7 @@ class ShepherdCheckActivity : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
-        plaid_view.StopView()
+
     }
 
     override fun onDestroy() {

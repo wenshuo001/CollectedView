@@ -3,6 +3,7 @@ package com.example.collectedview
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.collectedview.UI.LableActivity
 import com.example.collectedview.UI.LoadingActivity
 import com.example.collectedview.UI.ShepherdCheckActivity
@@ -35,5 +36,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
+        Toast.makeText(this,"bug又出现了",Toast.LENGTH_SHORT).show();
     }
 }
