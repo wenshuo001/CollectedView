@@ -7,7 +7,7 @@ apply plugin: 'tinkerpatch-support'
 //基包路径
 def bakPath = file("${buildDir}/bakApk/")
 //基包文件夹名（打补丁包的时候，需要修改）
-def baseInfo = "app-1.0-1129-10-04-42"
+def baseInfo = "app-1.0-1129-12-27-49"
 //版本名称
 def variantName = "debug"
 

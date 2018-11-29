@@ -36,6 +36,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
-        Toast.makeText(this,"bug又出现了",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"滴滴滴",Toast.LENGTH_SHORT).show();
     }
 }

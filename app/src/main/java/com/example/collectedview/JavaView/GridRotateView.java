@@ -144,17 +144,17 @@ public class GridRotateView extends View
         RectF rectF = new RectF(0, top, getWidth(), getHeight() - top);
         canvas.drawRect(rectF, backGroundPaint);
 
-        for (int i=0; i<8; i++)
+        for (int i=0; i<8; i++)//绘制黑白格
         {
             int degree = degrees[i];
             for(int j=0; j<4; j++)
             {
                 float startX;
-                float startY = top + i*size;
+                float startY = top + i*size;//y轴坐标
                 if (isBlack)
-                    startX = size + size*2*j;
+                    startX = size + size*2*j;// 黑格子起始坐标
                 else
-                    startX = 0 + size*2*j;
+                    startX = 0 + size*2*j;//白格子起始坐标
 
                 rectPath.reset();
                 rectPath.moveTo(getRotateX(startX + s, degree + 0), getRotateY(startY + s, degree + 0));
@@ -167,7 +167,7 @@ public class GridRotateView extends View
             isBlack = !isBlack;
         }
 
-        if (!isRun)
+        if (!isRun)//开始旋转
         {
             isRun = true;
             startAnimation();
