@@ -34,7 +34,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
@@ -45,9 +45,9 @@ dependencies {
     androidTestCompile('com.android.support:support-annotations:26.1.0') {
         force = true
     }
-
     // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
-    provided("com.tinkerpatch.tinker:tinker-android-anno:1.9.9")
-    implementation("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.9")
+    provided 'com.tinkerpatch.tinker:tinker-android-anno:1.9.9'
+    implementation 'com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.9'
+
 }
 apply from: 'tinkerpatch.gradle'

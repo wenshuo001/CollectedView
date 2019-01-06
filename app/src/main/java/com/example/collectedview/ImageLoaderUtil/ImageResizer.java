@@ -5,6 +5,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.io.FileDescriptor;
+import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  * Creator :Wen
@@ -14,7 +16,10 @@ import java.io.FileDescriptor;
 public class ImageResizer {
     private static final String TAG = "ImageResizer";
 
+    ArrayList list=new ArrayList();
     public ImageResizer() {
+        list.add(1);
+        new Vector<>().add(1);
     }
 
     public Bitmap decodeSampledBitmapFromResource(Resources res,int resId,int reqWidth,int reqHeight){
