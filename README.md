@@ -8,3 +8,4 @@
 
  
 <div align=center><img width="350" height="650" src="https://github.com/wenshuo001/CollectedView/blob/master/gif/lableview.jpg"/></div>
+[标签](https://github.com/wenshuo001/CollectedView/blob/master/app/src/main/java/com/example/collectedview/JavaView/LableView.java)
