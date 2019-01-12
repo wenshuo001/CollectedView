@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.collectedview.UI.CirlleProgressActivity
 import com.example.collectedview.UI.LableActivity
 import com.example.collectedview.UI.LoadingActivity
 import com.example.collectedview.UI.ShepherdCheckActivity
@@ -33,6 +34,12 @@ class MainActivity : AppCompatActivity() {
 
         ShepherdCheck.setOnClickListener {
             Intent(this@MainActivity,ShepherdCheckActivity::class.java).run {
+                startActivity(this)
+            }
+        }
+
+        btn_circle.setOnClickListener {
+            Intent(this@MainActivity, CirlleProgressActivity::class.java).run {
                 startActivity(this)
             }
         }
