@@ -2,6 +2,7 @@
 
     <dimen name="loading_dialog_h">150dp</dimen>
     <dimen name="loading_dialog_w">150dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
 
 </resources>
