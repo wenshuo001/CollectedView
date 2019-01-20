@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        fragment= ShowDialogFragment()
-        fragment?.dialog?.setCancelable(false)
-        fragment?.dialog?.setCanceledOnTouchOutside(false);
-        fragment?.show(supportFragmentManager,"show")
+//        fragment= ShowDialogFragment()
+//        fragment?.dialog?.setCancelable(false)
+//        fragment?.dialog?.setCanceledOnTouchOutside(false);
+//        fragment?.show(supportFragmentManager,"show")
 
         /**
          * 消息等待提示框

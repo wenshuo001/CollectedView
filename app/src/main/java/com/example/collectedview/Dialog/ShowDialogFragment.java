@@ -58,7 +58,7 @@ public class ShowDialogFragment extends DialogFragment implements View.OnClickLi
         WindowManager.LayoutParams params = window.getAttributes();
         params.gravity = Gravity.CENTER_VERTICAL;
         params.width = (int) (ScreenUtils.getScreenWidth()*0.94);
-        params.height=(int) (ScreenUtils.getScreenHeight()*0.64);
+        params.height=(int) (ScreenUtils.getScreenHeight()*0.65);
         window.setAttributes(params);
         window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         window.getDecorView().setOnTouchListener(new View.OnTouchListener() {
