@@ -52,6 +52,9 @@ dependencies {
     provided 'com.tinkerpatch.tinker:tinker-android-anno:1.9.9'
     implementation 'com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.9'
     implementation 'com.android.support:design:26.1.0'
+    //卡片式布局
     compile 'com.android.support:cardview-v7:26.1.0'
+    //权限请求
+
 }
 apply from: 'tinkerpatch.gradle'
