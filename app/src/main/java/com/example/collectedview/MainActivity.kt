@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.support.v4.app.DialogFragment
 import android.widget.Toast
 import com.example.collectedview.Dialog.ShowDialogFragment
-import com.example.collectedview.UI.CirlleProgressActivity
-import com.example.collectedview.UI.LableActivity
-import com.example.collectedview.UI.LoadingActivity
-import com.example.collectedview.UI.ShepherdCheckActivity
+import com.example.collectedview.UI.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +49,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
-        Toast.makeText(this,"滴滴滴",Toast.LENGTH_SHORT).show();
+
+        btn_sipnner.setOnClickListener {
+            Intent(this@MainActivity,SpinnerActivity::class.java).run {
+                startActivity(this)
+            }
+        }
     }
 }

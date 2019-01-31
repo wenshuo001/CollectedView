@@ -55,6 +55,6 @@ dependencies {
     //卡片式布局
     compile 'com.android.support:cardview-v7:26.1.0'
     //权限请求
-
+    //百分比
 }
 apply from: 'tinkerpatch.gradle'
