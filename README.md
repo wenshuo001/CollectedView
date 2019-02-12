@@ -21,4 +21,4 @@
 [进度条](https://github.com/wenshuo001/CollectedView/blob/master/app/src/main/java/com/example/collectedview/UI/CirlleProgressActivity.java)
 
 <div align=center><img width="350" height="650" src="https://github.com/wenshuo001/CollectedView/blob/master/gif/dialogFragment.gif"/></div>
-[进度条](https://github.com/wenshuo001/CollectedView/blob/master/app/src/main/java/com/example/collectedview/UI/ShowDialogFragment.java)
+[进度条](https://github.com/wenshuo001/CollectedView/blob/master/app/src/main/java/com/example/collectedview/Dialog/ShowDialogFragment.java)
