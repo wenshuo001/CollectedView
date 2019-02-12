@@ -76,5 +76,17 @@
        app:layout_constraintStart_toEndOf="@+id/ShepherdCheck"
        app:layout_constraintTop_toBottomOf="@+id/loading_dialog" />
 
+   <Button
+       android:id="@+id/dialogFragment"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginTop="8dp"
+       android:layout_marginEnd="8dp"
+       android:text="Button"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/btn_sipnner"
+       app:layout_constraintTop_toBottomOf="@+id/btn_circle" />
+
 </android.support.constraint.ConstraintLayout>
 </com.example.collectedview.Layout.ReboundScrollView>
