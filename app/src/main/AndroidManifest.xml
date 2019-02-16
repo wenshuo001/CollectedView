@@ -24,7 +24,8 @@
         <activity android:name=".UI.ShepherdCheckActivity" />
         <activity android:name=".UI.DialogActivity" />
         <activity android:name=".UI.CirlleProgressActivity" />
-        <activity android:name=".UI.SpinnerActivity"></activity>
+        <activity android:name=".UI.SpinnerActivity" />
+        <activity android:name=".UI.RepalceFragmentActivity"></activity>
     </application>
 
 </manifest>

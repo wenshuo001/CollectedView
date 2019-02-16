@@ -18,12 +18,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         dialogFragment.setOnClickListener {
-         fragment= ShowDialogFragment()
+            fragment= ShowDialogFragment()
         fragment?.dialog?.setCancelable(false)
         fragment?.dialog?.setCanceledOnTouchOutside(false);
         fragment?.show(supportFragmentManager,"show")
         }
 
+
+        listFenZuFragment.setOnClickListener {
+            Intent(this@MainActivity,RepalceFragmentActivity::class.java).run {
+                startActivity(this)
+            }
+        }
 
         /**
          * 消息等待提示框

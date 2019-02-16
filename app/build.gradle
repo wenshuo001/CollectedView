@@ -56,5 +56,6 @@ dependencies {
     compile 'com.android.support:cardview-v7:26.1.0'
     //权限请求
     //百分比
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
 }
 apply from: 'tinkerpatch.gradle'
