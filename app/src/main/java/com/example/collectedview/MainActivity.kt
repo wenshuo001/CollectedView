@@ -1,9 +1,13 @@
 package com.example.collectedview
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.ActivityCompat
 import android.support.v4.app.DialogFragment
+import android.support.v4.content.ContextCompat
 import android.widget.Toast
 import com.example.collectedview.Dialog.ShowDialogFragment
 import com.example.collectedview.UI.*
@@ -62,6 +66,12 @@ class MainActivity : AppCompatActivity() {
 
         btn_sipnner.setOnClickListener {
             Intent(this@MainActivity,SpinnerActivity::class.java).run {
+                startActivity(this)
+            }
+        }
+
+        button.setOnClickListener {
+            Intent(this@MainActivity,MusicActivity::class.java).run {
                 startActivity(this)
             }
         }

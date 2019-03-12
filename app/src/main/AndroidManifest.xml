@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.collectedview">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -26,6 +27,7 @@
         <activity android:name=".UI.CirlleProgressActivity" />
         <activity android:name=".UI.SpinnerActivity" />
         <activity android:name=".UI.RepalceFragmentActivity"></activity>
+        <activity android:name=".UI.MusicActivity"/>
     </application>
 
 </manifest>

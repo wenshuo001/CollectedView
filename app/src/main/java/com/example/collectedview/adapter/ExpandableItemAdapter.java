@@ -16,9 +16,9 @@ public class ExpandableItemAdapter extends BaseMultiItemQuickAdapter<MultiItemEn
 
     public ExpandableItemAdapter(List<MultiItemEntity> data) {
         super(data);
-        addItemType(TYPE_LEVEL_0, R.layout.item_expandable_lv0);
-        addItemType(TYPE_LEVEL_1, R.layout.item_expandable_lv1);
-        addItemType(TYPE_PERSON, R.layout.item_expandable_lv2);
+//        addItemType(TYPE_LEVEL_0, R.layout.item_expandable_lv0);
+//        addItemType(TYPE_LEVEL_1, R.layout.item_expandable_lv1);
+//        addItemType(TYPE_PERSON, R.layout.item_expandable_lv2);
     }
 
     @Override
