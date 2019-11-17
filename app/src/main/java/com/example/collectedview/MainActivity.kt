@@ -75,5 +75,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
+
+        switch_ios.setOnClickListener {
+            Intent(this@MainActivity,IOSActivity::class.java).run {
+                startActivity(this)
+            }
+        }
     }
 }

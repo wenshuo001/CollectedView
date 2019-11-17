@@ -114,5 +114,21 @@
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toEndOf="@+id/btn_sipnner"
           app:layout_constraintTop_toBottomOf="@+id/btn_circle" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           >
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="xiaoguo"
+               android:id="@+id/switch_ios"
+               />
+
+       </LinearLayout>
    </LinearLayout>
+
+
 </com.example.collectedview.Layout.ReboundScrollView>
