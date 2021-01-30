@@ -49,8 +49,8 @@ dependencies {
     }
 
     // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
-    compileOnly 'com.tinkerpatch.tinker:tinker-android-anno:1.9.9'
-    implementation 'com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.9'
+//    compileOnly 'com.tinkerpatch.tinker:tinker-android-anno:1.9.9'
+//    implementation 'com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.9'
     implementation 'com.android.support:design:26.1.0'
     //卡片式布局
     implementation 'com.android.support:cardview-v7:26.1.0'
@@ -59,4 +59,4 @@ dependencies {
     implementation 'com.zhy:percent-support-extends:1.1.1'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
 }
-apply from: 'tinkerpatch.gradle'
+

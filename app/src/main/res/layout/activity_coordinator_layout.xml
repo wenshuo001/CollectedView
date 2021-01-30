@@ -96,33 +96,5 @@
     </com.zhy.android.percent.support.PercentRelativeLayout>
 
 
-    <com.example.collectedview.JavaView.ShapeRelativeLayout
-        android:id="@+id/first_layout"
-        app:startColor="#FF9326"
-        app:endColor="#FFC54E"
-        android:layout_width="200dp"
-        app:radius="5dp"
-        app:orientation="horizontal"
-        android:layout_height="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
-
-    </com.example.collectedview.JavaView.ShapeRelativeLayout>
-
-    <com.example.collectedview.JavaView.ShapeRelativeLayout
-        app:startColor="#FF9326"
-        app:endColor="#FFC54E"
-        android:layout_width="200dp"
-        app:radius="5dp"
-        app:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/first_layout"
-        android:layout_height="100dp"
-        android:layout_marginTop="220dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        >
-
-    </com.example.collectedview.JavaView.ShapeRelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

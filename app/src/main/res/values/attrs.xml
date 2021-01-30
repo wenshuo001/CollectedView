@@ -17,4 +17,36 @@
 
         <attr name="imagersEnd" format="reference"/>
     </declare-styleable>
+
+
+    <!--RelativeLayout-->
+    <declare-styleable name="ShapeRelativeLayout">
+        <!--填充色-->
+        <attr name="solidColor" format="color" />
+        <!--边框色-->
+        <attr name="strokeColor" format="color" />
+        <!--边框宽度-->
+        <attr name="strokeWidth" format="dimension" />
+        <!--设置渐变色-->
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <!--圆角弧度-->
+        <attr name="radius" format="dimension" />
+        <!--四个角的圆角弧度-->
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+        <!--虚线边框宽度-->
+        <attr name="dashWidth" format="dimension" />
+        <!--虚线边框间隙-->
+        <attr name="dashGap" format="dimension" />
+        <!-- Standard orientation constant. -->
+        <attr name="orientation">
+            <!-- 渐变从左至右 -->
+            <enum name="horizontal" value="0" />
+            <!-- 渐变从上至下 -->
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
 </resources>
