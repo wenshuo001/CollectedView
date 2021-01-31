@@ -20,7 +20,7 @@
 
 
     <!--RelativeLayout-->
-    <declare-styleable name="ShapeRelativeLayout">
+    <declare-styleable name="ShapeLayout">
         <!--填充色-->
         <attr name="solidColor" format="color" />
         <!--边框色-->

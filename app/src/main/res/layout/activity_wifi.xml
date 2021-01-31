@@ -110,7 +110,7 @@
 
     </com.example.collectedview.JavaView.ShapeRelativeLayout>
 
-    <com.example.collectedview.JavaView.ShapeRelativeLayout
+    <com.example.collectedview.JavaView.ShapeLinearLayout
         app:startColor="#FF9326"
         app:endColor="#FFC54E"
         android:layout_width="200dp"
@@ -121,8 +121,11 @@
         android:layout_marginTop="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
         >
 
-    </com.example.collectedview.JavaView.ShapeRelativeLayout>
+    </com.example.collectedview.JavaView.ShapeLinearLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>

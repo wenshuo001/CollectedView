@@ -3,21 +3,13 @@ package com.example.collectedview.JavaView;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.GradientDrawable;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
 import com.example.collectedview.R;
 
-
-/**
- * @description 实现自定义圆角背景
- * 支持
- * 1.四边圆角
- * 2.指定边圆角
- * 3.支持填充色以及边框色,边框虚线
- */
-
-public class ShapeRelativeLayout extends RelativeLayout {
+public class ShapeLinearLayout extends LinearLayout {
 
     //自定背景边框Drawable
     private GradientDrawable gradientDrawable;
@@ -43,15 +35,15 @@ public class ShapeRelativeLayout extends RelativeLayout {
     //边框虚线的间隙
     float dashGap = 0;
 
-    public ShapeRelativeLayout(Context context) {
+    public ShapeLinearLayout(Context context) {
         this(context,null);
     }
 
-    public ShapeRelativeLayout(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+    public ShapeLinearLayout(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs,0);
     }
 
-    public ShapeRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ShapeLinearLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
         if (startColor != 0 && endColor != 0) {
