@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.collectedview.Dialog.Solve7PopupWindow;
+import com.example.collectedview.JavaView.ExpandLinearLayout;
 import com.example.collectedview.R;
 import com.example.collectedview.adapter.ListRiskAreaListsDemoAdapter;
 
@@ -41,6 +42,15 @@ public class SpinnerActivity extends AppCompatActivity {
             }
         });
         textView.setTextColor(getResources().getColor(R.color.homeworktext));
+
+        findViewById(R.id.ell).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean toggle = ((ExpandLinearLayout)findViewById(R.id.ell)).toggle();
+                //tv_tip.text = if (toggle) "收起" else "展开"
+
+            }
+        });
     }
 
     //PopupWindow菜单详细内容显示

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".UI.SpinnerActivity">
 <RelativeLayout
     android:id="@+id/rl_spinner"
@@ -17,9 +18,56 @@
         android:layout_centerVertical="true"
         android:text="全部年级"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:gravity="center"/>
 </RelativeLayout>
 
+<com.example.collectedview.JavaView.ExpandLinearLayout
+    android:id="@+id/ell"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+</com.example.collectedview.JavaView.ExpandLinearLayout>
 
 </LinearLayout>
